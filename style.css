@@ -1,0 +1,137 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+nav{
+	display: flex;
+	position: fixed;
+	width: 100vw;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	background-color: rgb(233, 122, 47) ;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+nav>a, nav>ul, i.nav-bar{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+li.nav-bar{
+	display: inline-block;
+	margin: auto 5px;
+}
+
+a.nav-bar{
+	color: white;
+	text-decoration: none;
+}
+
+li.nav-bar{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+li.nav-bar:hover div.underline{
+	color: white;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 5px;
+	border: 2px white solid;
+	border-radius: 2px;
+	transition: 0.5s;
+	background: white;
+}
+li.nav-bar:not(hover) div.underline{
+	color: white;
+	display: block;
+	box-sizing: border-box;
+	width: 0%;
+	width: 1px;
+	height: 5px;
+	border: none;
+	transition: 0.25s;
+	box-sizing: border-box;
+}
+
+div.underline{
+	display: inline-flex;
+	box-sizing: border-box;
+	width: 1px;
+	height: 7px;
+	border: none;
+	/* border-bottom: 4px white solid; */
+
+}
+
+#section-welcome { 
+	display: block;
+	position: relative;
+	margin: 0;
+	margin-top: 60px;
+	width: 100%;
+	height: 50vh;
+	min-height:500px;
+}
+
+#section-welcome-bg{
+	display: inline-block;
+	position: absolute;
+	background-image: url('images/headerback.jpg'); 
+	background-size: cover;
+	opacity: 0.3;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+
+.information{
+	position: relative;
+	padding: 15% 15%;
+	z-index: 2;
+}
+
+.section-title{
+	color: rgb(233, 123, 62);
+}
+
+.section-text{
+	color: grey;
+}
+#section-about {
+	position: relative;
+	z-index: 1;
+	
+}
+
+/* #section-about h1{
+	text-align: center;
+}
+
+#about{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#about .about{
+	margin: 0 20px;
+}
+*/
+#about-photo{
+	border-radius: 50%;
+}
+
+.portfolio-img{
+	border: 1px solid black; 
+	height:200px; 
+	overflow: hidden;
+}
